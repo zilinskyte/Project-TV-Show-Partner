@@ -9,25 +9,26 @@
   </head>
 
   <body>
-    <label for="search-input">Search episodes:</label>
+    <h1>All episodes</h1>
+
     <input
-      type="text"
-      id="search-input"
-      placeholder="Search by episode name or summary..."
+      type="search"
+      id="searchInput"
+      placeholder="Search episodes..."
     />
 
-    <label for="episode-select">Jump to episode:</label>
-    <select id="episode-select">
-      <option value="">All episodes</option>
+    <select id="episodeSelect">
+      <option value="">Jump to an episode...</option>
     </select>
 
-    <p id="episode-count"></p>
+    <p id="episodeCount"></p>
 
-    <div id="root" class="grid-container"></div>
+    <!-- Status message -->
+    <p id="statusMessage">Loading episodes…</p>
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
-    <!-- Loads JavaScript code -->
+    <div id="episodes" class="grid-container"></div>
+
+    <!-- IMPORTANT: episodes.js REMOVED -->
     <script src="script.js"></script>
   </body>
 </html>
